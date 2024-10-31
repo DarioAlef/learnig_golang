@@ -5,9 +5,9 @@ import (
 	"math/rand"
 )
 
-//' * ' é usado para acessar o valor de referência de um ponteiro
+// ' * ' é usado para acessar o valor de referência de um ponteiro
 
-func main() {
+func main2() {
 	n := rand.Intn(101) //rand.Intn gera um valor aleatório entre 0 e 100
 
 	var tentativa int
@@ -25,15 +25,15 @@ func main() {
 	}
 	fmt.Println("Parabéns, você acertou!")
 
-	// for i := 20; i < 30; i++ {   //for usado como for
-	// 	fmt.Println(i)
-	// }
+	for i := 20; i < 30; i++ { //for usado como for
+		fmt.Println(i)
+	}
 
 	// I := 0
 	// for I < 10 {   //for usado como while
-	// 	fmt.Println(I)
-	// 	I++
+	// fmt.Println(I)
+	// I++
 	// }
 }
 
-// func sortear(n int) {}
+func sortear(n int) {}
