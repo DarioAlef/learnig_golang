@@ -23,6 +23,7 @@ func main() {
 		reverso += string(palavra[i])
 		//i começa pelo tamanho de palavra (-1) para ser ao contrário
 		//adicionando à variável array 'reverso'
+		fmt.Println(reverso)
 	}
 	if reverso == palavra {
 		fmt.Println("É um palíndronomo")
