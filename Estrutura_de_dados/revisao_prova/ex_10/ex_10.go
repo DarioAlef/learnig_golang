@@ -6,10 +6,10 @@ import (
 
 // Faça uma função que conte quantos números pares há em um slice.
 func main() {
-	numbers := []int{}
+	var numbers []int
 	var num int
 
-	fmt.Println("Digite uma sequência de inteiros (0 para parar): ")
+	fmt.Println("\nDigite um número ('0' para parar): ")
 	for {
 		fmt.Scan(&num)
 		if num == 0 {
@@ -17,14 +17,17 @@ func main() {
 		}
 		numbers = append(numbers, num)
 	}
-	pares(numbers)
+
+	count := pares(numbers)
+	fmt.Println("Quantidade de números pares: ", count)
 }
-func pares(numbers []int) []int {
-	nPares := []int{}
-	for _, num := range numbers {
-		if num%2 == 0 {
-			nPares = append(nPares, num)
+
+func pares(numbers []int) int {
+	var count int
+	for _, n := range numbers {
+		if n%2 == 0 {
+			count++
 		}
 	}
-	return nPares
+	return count
 }
