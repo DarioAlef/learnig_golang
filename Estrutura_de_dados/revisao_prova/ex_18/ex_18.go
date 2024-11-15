@@ -26,9 +26,9 @@ func pot(base int, expo int) int {
 	if expo == 1 {
 		return base
 	}
-	
-//base^expo = base^(expo/2) * base^(expo/2)
-//temos := base^expo = pot(base, expo/2) * pot(base, expo/2)
+
+	//base^expo = base^(expo/2) * base^(expo/2)
+	//temos := base^expo = pot(base, expo/2) * pot(base, expo/2)
 	termo := pot(base, expo/2)
 	if expo%2 == 0 {
 		return termo * termo

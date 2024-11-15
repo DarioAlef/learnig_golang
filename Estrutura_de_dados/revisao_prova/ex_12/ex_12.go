@@ -19,14 +19,13 @@ func main() {
 		}
 		//fmt.Scan(&num)
 
-		for i :=range mapPalavras{
-			if i==palavra{
+		for i := range mapPalavras {
+			if i == palavra {
 				num++
 			}
 		}
 		mapPalavras[palavra] = num
 	}
-	
 
 	fmt.Println(mapPalavras)
 }

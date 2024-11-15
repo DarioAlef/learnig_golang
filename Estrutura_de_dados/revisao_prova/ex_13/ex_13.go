@@ -1,5 +1,7 @@
 package main
+
 import "fmt"
+
 //Dado um map que mapeia nomes para idades, crie uma função
 //que inverta esse map, ou seja, mapeie idades para nomes
 func main() {
