@@ -1,8 +1,8 @@
 package main
 
-import exercicios "Estrutura_Dados/arbi/exercicios"
+import "fmt"
 
 func main() {
-	exercicios.Run()
+	fmt.Println("Hello, World!")
+	Teste()
 }
-
